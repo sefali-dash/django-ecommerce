@@ -1,4 +1,4 @@
-# Mini E-Commerce REST API
+# E-Commerce REST API
 
 Django REST Framework backend with JWT auth, catalog, cart, checkout, and admin endpoints.
 
@@ -95,12 +95,12 @@ python manage.py test accounts.tests.test_api_inventory
 
 ## API overview
 
-| Access | Count |
-|--------|------:|
-| Public (no access token) | 9 |
-| Public* (refresh token only) | 1 |
-| User (access token) | 11 |
-| Admin (staff + access token) | 13 |
-| **Total exercises** | **34** |
+| Access                        |  Count |
+| ----------------------------- | -----: |
+| Public (no access token)      |      9 |
+| Public\* (refresh token only) |      1 |
+| User (access token)           |     11 |
+| Admin (staff + access token)  |     13 |
+| **Total exercises**           | **34** |
 
 Product search and category filter use `GET /api/products/?q=` and `GET /api/products/?category=`.
